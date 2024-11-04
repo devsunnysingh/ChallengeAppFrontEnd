@@ -1,7 +1,7 @@
 import Challenge from "./Challenge";
 function ChallengeList({challenges}){
     return (
-    <div>
+    <div >
     {
         challenges.map(challenge=>(
         

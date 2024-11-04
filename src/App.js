@@ -3,6 +3,7 @@ import ChallengeList from './components/ChallengeList';
 import AddChallenge from './components/AddChallenge';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [challenges, setChallengeList] = useState([
@@ -30,8 +31,8 @@ function App() {
   };
 
   return (
-      <div className="App">
-          <h1>Monthly Challenges</h1>
+      <div className="container mt-5">
+          <h1 className="text-center mb-4">Monthly Challenges</h1>
           <AddChallenge onChallengeAdded={handleChallengeAdded} />
           <ChallengeList challenges={challenges} />
       </div>
